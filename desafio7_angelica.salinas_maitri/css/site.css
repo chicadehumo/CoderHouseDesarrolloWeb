@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito:wght@200;300;400;900&display=swap');
+
+/* Nav */
+.main-nav {
+    background-color: rgba(1, 38, 57, 0.7);
+}
+.main-nav a { color: white !important;}
+.main-nav a.icon {
+    padding: 5px 0 5px 5px;
+    display: block;
+    width: 35px;
+}
+.main-nav a.icon {
+    margin-left: 10px;
+}
+.store .header { background-color: rgba(59, 110, 167, 0.7);}
+
+/* Prime */
+.prime {
+    background-image: url(../images/home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-attachment: fixed;
+    color: white;
+    
+}
+.store .prime { background-image: url(../images/maitri_store_mobile.jpg); }
+.tribu .prime { background-image: url(../images/maitri_tribu_mobile.jpg); }
+.prime .box-pad {
+    margin-top: 10%;
+    padding: 40px 0 40px;
+}
+.box-pad h1, .box-pad .slogan {
+    text-transform: uppercase;
+    color: white;
+}
+.box-pad h1{ max-width: 339px; }
+.box-pad .slogan {
+    font-size: 1.8rem;
+    max-width: 300px;
+    margin-top: 20px;
+}
+/* Productos */
+.products {
+    display: block;
+} 
+.product-item {
+    margin-right: 20px;
+} 
+.product-item figure {
+    margin-bottom: 20px;
+} 
+.product-item figcaption {
+    padding: 20px;
+} 
+.product-item .desc {
+    margin-bottom: 20px;
+}
+.product-item .more {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px #999;
+    text-align: center;
+    font-size: 2rem;
+    color: #3B6EA7;
+    line-height: 1;
+    padding-top: 3px;
+    text-decoration: none;
+}
+/* Servicios */
+.servicios {
+    padding: 0;
+    background-color: #f6f6f6;
+}
+.servicios .container-full {
+	grid-template-areas: "leftArea" "rightArea";
+}
+.servicios h2 {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+}
+.servicios .box-pad {
+    min-height: 150px;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-bottom: auto;
+    padding-inline: 30px;
+}
+.servicios .child-box-half > div {
+    width: 60%;
+}
+/*.servicios .store { align-items: center; }*/
+.overlay.store {
+    min-height: 222px;
+    display: block;
+}
+.overlay.store h2 { 
+    margin-right: 30px;
+}
+/* Talleres */
+.talleres {
+    padding: 0;
+}
+.talleres .container-full {
+	grid-template-areas: "leftArea" "rightArea";
+}
+.talleres .box-pad {
+    padding: 30px;
+}
+.taller a {
+    color: white;
+}
+.talleres .taller {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% top;
+} 
+.taller .overlay {
+    color: white;
+}
+.taller img {
+    mix-blend-mode: multiply;
+}
+.taller.uno { background-color: #85CAC8; }
+.taller.dos { background-color: #3B6EA7; }
+.taller.tres { background-color: #78AFAD; }
+.taller.cuatro { background-color: #155259; }
+.taller.cinco { background-color: #008CA4; }
+.taller .box-pad {
+    padding: 0px;      
+} 
+/* Footer */
+.footer {
+    background-color: #012639;
+    color: white;
+    padding-block: 60px;
+}
+.footer .logo { text-align: center; }
+.footer .grid {
+    padding-block: 40px;
+}
+.footer a { color: white; text-decoration: none; }
+.footer h3 { 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.footer p { font-size: 1.185rem; }
+.footer .social, .footer .contact { 
+    list-style: none;
+}
+.footer .social li { 
+    display: inline-block; 
+    margin-right: 10px;
+}
+.footer .social img { 
+    width: 25px;
+    height: 25px; 
+}
+.footer .contact img { 
+    width: 18px;
+    height: 18px; 
+    margin-right: 10px;
+}
+.footer .contact {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.footer .contact li{
+    margin-bottom: 15px;
+}
+.legal { font-size: .8rem; color: #ccc; padding-top: 40px; }
+.footer hr { border-bottom: dashed 1px #3B6EA7;}
+
+
+
+@media (min-width: 640px) {
+    /* header */
+    .prime { background-image: url(../images/home-stage.jpg); }
+    .store .prime { background-image: url(../images/maitri_store_stage.jpg); }
+    .tribu .prime { background-image: url(../images/maitri_tribu_stage.jpg); }
+    h1 { font-size: 3.75rem; color: white; }
+    .box-pad .slogan {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    /* HOME */
+
+
+    /*Servicios*/
+    .servicios h2 {
+        font-size: 2.5rem;
+    }
+    .products {
+        display: flex;
+    } 
+    .overlay.store {
+        min-height: 222px;
+    }
+    .overlay.store p {
+        max-width: 50%;
+    }
+    /* Footer */
+    .footer {
+        background-color: #012639;
+        color: white;
+    }
+    .footer .logo { text-align: left; }
+    .footer .column-1-2-s { grid-template-columns: 70% 30%; }
+    .footer .box-pad { padding: 10px;}
+
+    /*About us*/
+    .tribu h1 { font-size: 3rem; color: white; }
+}
