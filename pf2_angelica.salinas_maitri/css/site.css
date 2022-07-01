@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito:wght@200;300;400;900&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 100%;
+    color: #012639;
+}
+
+/****************** Global ******************/
+/****************** ****** ******************/
+
+/* Buttons */
+.btn {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 2.2;
+}
+
+.btn-primary {
+    background-color: #F2916D;
+    color: #27343B;
+    border-color: #db8262;
+}
+.btn-primary:hover {
+    background-color: #ef7549;
+    border-color: #F2916D;
+}
+.btn-secondary {
+    background-color: #85CAC8;
+    color: #27343B !important;
+    border-color: #78AFAD;
+}
+.btn-secondary:hover {
+    color: white !important;
+    background-color: #78AFAD;
+    border-color: #78AFAD;
+}
+
+/* Backgrounds */
+.background-dark { background-color: #012639; }
+.background-transparent-primary {
+    background-color: rgba(1, 38, 57, .85);
+    color: white;
+}
+.background-transparent-secondary {
+    background-color: rgba(238, 128, 128, 0.6);
+    color: white;
+}
+
+/* Colors */
+.text-primary { color: #3B6EA7 !important; }
+.text-secondary { color: #EE8080 !important; }
+
+/* Headings */
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+}
+h1 { font-size: calc(3rem + .9vw); }
+h2 { font-size: calc(2rem + .9vw); }
+@media (min-width: 640px) {
+    h1 { font-size: 3.75rem; }
+}
+
+/* Nav */
+.navbar>.container { justify-content: start; }
+
+
+@media (min-width: 640px) {
+    .navbar>.container { justify-content: space-between; }
+}
+
+
+
+
+/****************** Sections pages ******************/
+/****************** ****** ******************/
+
+/* Nav */
+.main-nav { 
+    background-color: rgba(1, 38, 57, 0.85);
+}
+.main-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+.store .main-nav { background-color: rgba(59, 110, 167, 0.85); }
+.workshop .main-nav { background-color: rgba(238, 128, 128, 0.85); }
+.main-nav .navbar-brand {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding-left: 10px;
+}
+.main-nav a { color: white !important;}
+.main-nav a.icon {
+    padding: 5px 0 5px 5px;
+    display: block;
+    width: 35px;
+}
+.main-nav a.icon {
+    margin-left: 10px;
+}
+.main-nav .dropdown-menu { background-color: #27343B; }
+.main-nav .dropdown-item:hover {
+    color: #1e2125 !important;
+    background-color: #e9ecef;
+}
+
+
+/* Prime */
+.prime {
+    background-image: url(../images/home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-attachment: fixed;
+    color: white;
+    
+}
+.store .prime { background-image: url(../images/maitri_store_mobile.jpg); }
+.tribu .prime { background-image: url(../images/maitri_tribu_mobile.jpg); }
+.workshop .prime { background-image: url(../images/maitri_workshop_mobile.jpg); }
+.prime .box-pad {
+    padding: 140px 0 100px;
+}
+.prime h1, .box-pad .slogan {
+    text-transform: uppercase;
+    color: white;
+}
+.box-pad h1{ max-width: 339px; font-weight: 600; }
+.box-pad .slogan {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    max-width: 300px;
+    margin-top: 20px;
+}
+/* Productos Destacados */
+
+/*
+.products {
+    display: block;
+} 
+.product-item {
+    margin-right: 20px;
+} 
+.product-item figure {
+    margin-bottom: 20px;
+} 
+.product-item figcaption {
+    padding: 20px;
+} 
+.product-item .desc {
+    margin-bottom: 20px;
+}
+.product-item .more {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px #999;
+    text-align: center;
+    font-size: 2rem;
+    color: #3B6EA7;
+    line-height: 1;
+    padding-top: 3px;
+    text-decoration: none;
+}
+*/
+/* Servicios */
+.servicios {
+    padding: 0;
+    background-color: #f6f6f6;
+}
+.servicios h2 {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+}
+.servicios .store .card-img-overlay {
+    height: 50%;
+}
+.servicios .sangha .card-img-overlay {
+    width: 60%;
+}
+/* Talleres */
+.talleres {
+    padding: 0;
+}
+.talleres .container-full {
+	grid-template-areas: "leftArea" "rightArea";
+}
+.talleres .card {
+    background-color: transparent;
+}
+.taller a {
+    color: white;
+}
+.talleres .taller {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% top;
+} 
+.taller img {
+    mix-blend-mode: multiply;
+}
+.taller.uno { background-color: #85CAC8; }
+.taller.dos { background-color: #3B6EA7; }
+.taller.tres { background-color: #78AFAD; }
+.taller.cuatro { background-color: #155259; }
+.taller.cinco { background-color: #008CA4; }
+.taller .box-pad {
+    padding: 0px;      
+} 
+/* Footer */
+.footer {
+    background-color: #012639;
+    color: white;
+    padding-block: 60px;
+}
+.footer .logo { text-align: center; }
+.footer .grid {
+    padding-block: 40px;
+}
+.footer a { color: white; text-decoration: none; }
+.footer h3 { 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.footer p { font-size: 1.185rem; }
+.footer .social, .footer .contact { 
+    list-style: none;
+}
+.footer .social li { 
+    display: inline-block; 
+    margin-right: 10px;
+}
+.footer .social img { 
+    width: 25px;
+    height: 25px; 
+}
+.footer .contact img { 
+    width: 18px;
+    height: 18px; 
+    margin-right: 10px;
+}
+.footer .contact {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.footer .contact li{
+    margin-bottom: 15px;
+}
+.legal { font-size: .8rem; color: #ccc; padding-top: 40px; }
+.footer hr { border-bottom: dashed 1px #3B6EA7;}
+
+/* Favorites Module */
+.favorites .card-img-overlay {
+    height: 60%;
+    width: 80%;
+    top: auto;
+}
+
+/* News page */
+.noticia .card {
+    background-color: transparent;
+}
+.noticia img {
+    mix-blend-mode: multiply;
+}
+.noticia.uno { background-color: #012639; }
+.noticia.dos { background-color: #3B6EA7; }
+.noticia.tres { background-color: #EE8080; }
+.noticia h3 {
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    max-width: 500px;
+}
+
+@media (min-width: 640px) {
+    /* header */
+    .main-nav .navbar-brand { padding-left: 0; }
+    .prime { background-image: url(../images/home-stage.jpg); }
+    .store .prime { background-image: url(../images/maitri_store_stage.jpg); }
+    .tribu .prime { background-image: url(../images/maitri_tribu_stage.jpg); }
+    .workshop .prime { background-image: url(../images/maitri_workshop_stage.jpg); }
+    h1 { font-size: 3.75rem; color: white; }
+    .box-pad .slogan {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    /* HOME */
+
+
+    /* Footer */
+    .footer {
+        background-color: #012639;
+        color: white;
+    }
+    .footer .logo { text-align: left; }
+    .footer .column-1-2-s { grid-template-columns: 70% 30%; }
+    .footer .box-pad { padding: 10px;}
+    /*Productos*/
+    
+    /*Servicios*/
+    .servicios h2 {
+        font-size: 2.5rem;
+    }
+    .servicios .store .card-img-overlay {
+        top: auto;
+    }
+    .servicios .sangha .card-img-overlay {
+        width: 50%;
+    }
+    /*.overlay.store {
+        min-height: 222px;
+    }
+    .overlay.store p {
+        max-width: 50%;
+    }*/
+    /*About us*/
+    .tribu h1 { font-size: 3rem; color: white; }
+    .tribu .box-pad .slogan {
+        max-width: 500px;
+    }
+}
+@media (min-width: 960px) {
+    /*Talleres*/
+    .taller img {
+        opacity: 0;
+        transition: all ease-in-out .5s;
+    }
+    .taller:hover img {
+        transition: all ease-in-out .5s;
+        mix-blend-mode: multiply;
+        opacity: 1;
+    }
+    /*Noticia*/
+    .noticia h3 { 
+        font-size: 2rem;
+        margin-top: 10%;
+    }
+    .noticia img {
+        opacity: 0;
+        transition: all ease-in-out .5s;
+    }
+    .noticia:hover img {
+        transition: all ease-in-out .5s;
+        mix-blend-mode: multiply;
+        opacity: 1;
+    }
+}
+@media (min-width: 1200px) {
+    /*Talleres*/
+    .taller .card-img-overlay {
+        padding-block: 30px;
+    }
+}
