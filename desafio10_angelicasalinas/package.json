@@ -1,0 +1,17 @@
+{
+  "name": "desafio10_angelicasalinas",
+  "version": "1.0.0",
+  "description": "Aplicando sass en el sitio",
+  "main": "",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

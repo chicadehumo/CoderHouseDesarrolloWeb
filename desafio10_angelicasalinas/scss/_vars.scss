@@ -1,0 +1,34 @@
+// variables globales
+
+
+// Backgrounds images
+$home-image-mb: url(../images/home-mobile.jpg);
+$home-image-stage: url(../images/home-stage.jpg);
+
+// Background color
+$global-background: #012639;
+
+// Breakpoints
+$breakpoint-s: 576px;
+$breakpoint-m: 768px;
+$breakpoint-l: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Colors
+$global-color: #27343B;
+$primary-color: $global-background;
+$secondary-color: #F2916D;
+
+:root {
+    --bs-primary-rgb: #3B6EA7;
+}
+
+$color:(
+    'uno': #85CAC8,
+    'dos': #3B6EA7,
+    'tres':#78AFAD,
+    'cuatro':#155259,
+    'cinco': #008CA4
+);
+
