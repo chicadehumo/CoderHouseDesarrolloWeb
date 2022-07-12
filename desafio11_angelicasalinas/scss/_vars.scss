@@ -1,0 +1,56 @@
+// variables globales
+
+
+// Backgrounds images
+$home-image-mb: url(../images/home-mobile.jpg);
+$home-image-stage: url(../images/home-stage.jpg);
+$store-image-mb: url(../images/maitri_store_mobile.jpg);
+$store-image-stage: url(../images/maitri_store_stage.jpg);
+$workshop-image-mb: url(../images/maitri_workshop_mobile.jpg);
+$workshop-image-stage: url(../images/maitri_workshop_stage.jpg);
+$tribu-image-mb: url(../images/maitri_tribu_mobile.jpg);
+$tribu-image-stage: url(../images/maitri_tribu_stage.jpg);
+$contact-image-mb: url(../images/home-mobile.jpg);
+$contact-image-stage: url(../images/home-stage.jpg);
+
+// Background color
+$global-background: #012639;
+
+// Breakpoints
+$breakpoint-s: 576px;
+$breakpoint-m: 768px;
+$breakpoint-l: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+// Colors
+$global-color: #27343B;
+$primary-color: $global-background;
+$secondary-color: #F2916D;
+
+$color:(
+    'uno': #85CAC8,
+    'dos': #3B6EA7,
+    'tres':#78AFAD,
+    'cuatro':#155259,
+    'cinco': #008CA4
+);
+
+$colorSection:(
+    'store': map-get($color, dos),
+    'workshop': #EE8080
+);
+
+:root {
+    --bs-primary-rgb: #3B6EA7;
+}
+
+
+// Heading
+$heading: (
+    'h1': calc(3rem + 1.1vw),
+    'h2': calc(2rem + .9vw)
+);
+
+// Section
+

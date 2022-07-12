@@ -1,0 +1,45 @@
+//Backgrounds image
+@mixin icon($display,$padding,$width) {
+    display: $display;
+	padding: $padding;
+    width: $width;
+}
+
+//Fonts
+@mixin fontFormat($size,$lineHeight,$color,$transform,$weight) {
+    font-size: $size;
+    line-height: $lineHeight;
+    color: $color;
+    @if $transform {
+        text-transform: $transform;
+    } @else {
+        text-transform: inherit;
+    }
+    @if $weight {
+        font-weight: $weight;
+    } @else {
+        font-weight: inherit;
+    }
+}
+
+//Icons
+@mixin icon($display,$padding,$width) {
+    display: $display;
+	padding: $padding;
+    width: $width;
+}
+
+//Nav 
+@mixin navbar($navBg) {
+    background-color: $navBg;
+}
+
+@mixin bg-image($posX,$posY,$bgRepeat,$bgSize) {
+    background-position: $posX $posY;
+    background-repeat: $bgRepeat;
+    @if $bgSize {
+    background-size: $bgSize;
+    } @else {
+        background-size: inherit;
+    }
+}
